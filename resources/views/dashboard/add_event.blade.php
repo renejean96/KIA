@@ -1,4 +1,14 @@
-@extends('layout.dashboard')
+@extends('layout.kia')
+
+  @section('header')
+    @include('inc.header')
+  @endsection
+
+  @section('menu')
+    @include('inc.dashHeader')
+  @endsection
+
+  @section('content')
      <main id="main">
 
     <!-- ======= Trainers Section ======= -->
@@ -35,6 +45,9 @@
 
         </div>
       </section><!-- End Trainers Section -->
-
-
   </main><!-- End #main -->
+@endsection
+@section('footer')
+  @include('inc.dash_footer')    
+@endsection
+  

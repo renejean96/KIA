@@ -65,7 +65,7 @@
   </main><!-- End #main -->
   @endsection
   @section('footer')
-    @include('inc.footer')    
+    @include('inc.dash_footer')    
   @endsection
 
 
