@@ -1,0 +1,244 @@
+section.dashboard .main-space{
+    font-family: "Raleway";    
+}
+p {
+    font-family: "Raleway";
+}
+.row .vision-part,
+.row .mission-part {
+    text-align: center;
+}
+.row .mission-part h4,
+.row .vision-part h4 {
+    font-weight: 900;
+}
+.row .vision-part p,
+.row .mission-part p{
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.activities-section .section-title,
+.section-about .section-title {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-weight: 900;    
+}
+.section-about .row i{
+    font-size: 30pt;
+    margin-bottom: 6%;
+}
+
+section.facts .section-title {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-weight: 900;    
+}
+
+section.announcements .section-title,
+section.calendar .section-title,
+section.staff .section-title{
+    margin-top: 2%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    font-weight: 900;    
+}
+
+section.announcements .sub-title,
+section.calendar .sub-title,
+section.staff .sub-title {
+    text-align: center;
+    color: grey;
+    margin-bottom: 4%;
+}
+
+section.calendar .calendar-table .header h4{
+    font-weight: 900;
+    color: #455052;
+}
+
+section.calendar .calendar-table .header .date-part {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+section.calendar .calendar-table .header .desc-part{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #eee;
+    border-right: 1px solid #ddd;
+}
+
+section.calendar .calendar-table .body .body-date {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;    
+    /* background-color: #ddd; */
+
+}
+section.calendar .calendar-table .body .body-desc{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;    
+    /* background-color: #eee; */
+}
+
+.section-staff .container .row .card .card-content {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section.about .section-title {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-weight: 900;    
+}
+
+section.about .about-history {
+    padding-right: 10%;
+    text-align: justify;
+}
+
+section.about .sub-list{
+    margin-top: 3%; 
+    margin-left: 4.5%;
+}
+
+section.facts {
+    background-color: #fff;
+}
+
+section.facts .card {
+    border: 4px solid #eee;
+    border-radius: 10px;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+section.facts h3{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-weight: 800;    
+}
+
+.facts-section i {
+    font-size: 50pt;
+}
+
+.facts-section {
+    text-align: center;
+}
+section.announcements .card {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 7%;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+section.announcements .card .main-title{
+    font-weight: 700;
+    color: #293233;
+    padding-bottom: 5%;
+    font-size: 16pt;
+}
+section.announcements .card .author{
+    font-weight: 500;
+    color: grey;
+    font-size: 12pt;
+}
+section.announcements .card .date{
+    font-weight: 500;
+    color: grey;
+    font-size: 12pt;
+}
+section.announcement .section-title{
+    margin-top: 2.5%;
+    margin-bottom: 0%;
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 1.5%;
+    font-weight: 800;
+    font-size: 19pt;    
+}
+section.announcement .recent-anns{
+    margin-top: 10%;
+    margin-bottom: 0%;
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 3%;
+    font-weight: 800;
+    font-size: 16pt;    
+}
+section.announcement .side-link {
+}
+section.announcement .side-link a h5{
+    text-align: left;
+    font-size: 13pt;
+    font-weight: 700;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #ddd;    
+} 
+section.announcement .sub-title h5{
+    text-align: left;
+    color: grey;
+    margin-bottom: 4%;
+    font-size: 13pt;
+    line-height: 1.7em;
+}
+section.dashboard .side-menu .list-group-item.active{
+    background-color: #f2f2f2;
+    border-left: 3px solid #455052;
+}
+section.dashboard .side-menu li{
+    border: none;
+}
+section.dashboard .side-menu li{
+    background-color: white;
+    color: #445052;
+    font-weight: 600;
+}
+section.dashboard .side-menu li a{
+    color: #455052;
+}
+section.dashboard .main-space {
+    margin-top: 4%;
+}
+section.dashboard .main-space h5 {
+    font-weight: 600;
+}
+section.dashboard .main-space .col-md-4 .btn-success {
+    float: right;
+}
+section.dashboard .main-space .main-form label{
+    font-weight: 600;
+}
+section.dashboard .main-space .main-form .form-control {
+    margin-bottom: 2%;
+}
