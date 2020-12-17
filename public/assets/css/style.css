@@ -397,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: linear-gradient(rgba(0, 2, 3, 0.384), rgba(0, 4, 7, 0.37)) ,url("../img/main_bg.jpg") top center;
+  background: linear-gradient(rgba(4, 12, 17, 0.507), rgba(1, 3, 5, 0.5)), url("../img/main_bg.jpg") top left;
   background-size: cover;
   position: relative;
 }
@@ -659,12 +659,16 @@ section {
   background: #fff;
   padding: 40px 30px;
   width: 100%;
-  border: 1px solid #eef0ef;
+  border-top: 4px solid #5fcf80;
+  border-left: 1px solid #eee!important;
+  border-right: 1px solid #eee!important;
+  border-bottom: 1px solid #eee!important;
+  border-radius: 5px;
 }
 
 .why-us .icon-boxes .icon-box i {
-  font-size: 32px;
-  padding: 18px;
+  font-size: 42px;
+  padding: 25px;
   color: #5fcf80;
   margin-bottom: 30px;
   background: #ecf9f0;

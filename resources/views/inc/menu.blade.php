@@ -9,11 +9,11 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
         <li class="active"><a href="{{'/'}}">Home</a></li>
-          <li class="drop-down"><a href="">About</a>
+          <li class="drop-down"><a href="#">About</a>
             <ul>
             <li><a href="{{'/about/school'}}">Our School</a></li>
               <li><a href="{{'/about/staff'}}">Staff members</a></li>
-            <li><a href="{{'about/gallery'}}">Gallery</a></li>
+            {{-- <li><a href="{{'about/gallery'}}">Gallery</a></li> --}}
             </ul>
           </li>          
         <li><a href="{{'/calender'}}">Academic Calendar</a></li>
