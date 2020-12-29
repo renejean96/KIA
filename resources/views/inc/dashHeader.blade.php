@@ -9,10 +9,19 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
         <li class="active"><a href="{{'/dashboard'}}">Dashboard</a></li>
-          <li class="drop-down"><a href="#">Christopher</a>
+          <li class="drop-down"><a href="">Christopher</a>
             <ul>
-              <li><a href="#">Logout</a></li>
+              <li>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+              </form>
+              </li>
           </li>
+          
 
         </ul>
       </nav><!-- .nav-menu -->

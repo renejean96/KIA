@@ -42,7 +42,7 @@ Route::get('/about/staff','PagesController@staff');
 Route::get('/about/school','PagesController@aboutSchool');
 Route::get('/calender','PagesController@calender');
 Route::get('/announcements','PagesController@announcements');
-Route::get('/announcement','PagesController@announcement'); 
+Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
 Route::get('/view/announcement','DashboardControl@dashboard');
 Route::get('/view/calender','DashboardControl@viewCalender');
@@ -55,4 +55,6 @@ Route::get('/add/event','DashboardControl@addEvent');
 
 Route::resource('posts','PostsController');
 
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 

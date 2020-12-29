@@ -259,3 +259,47 @@ section.dashboard .main-space .main-form .form-control {
     height: 90%;
     border: 3px solid #ddd;
 }
+
+.login-form{
+    border-top: 3px solid #5fcf80;
+    font-size: 16px;    
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+    padding: 2%;
+}
+.login-form .input-group{
+    font-size: 16px;
+    color:#455052;
+    background-color: white;
+    border:2px solid #ccc!important;
+    border-radius: 3px;
+    box-shadow: none;
+    margin-bottom: 2%;
+}
+.login-form .input-group .input-group-addon{
+
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+}
+.login-form .panel-heading{
+    background-color: white;
+    border-bottom: none;
+}
+.login-form .input-group input {
+    height: 39px;
+    border: none;    
+    border-radius: 0;
+}
+.login-form .panel-body label{
+    font-weight: 600;
+    color: #455355;
+}
+.login-form .panel-body {
+    padding-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.login-form .panel-body h6{ 
+    margin-top: 5%;
+}
