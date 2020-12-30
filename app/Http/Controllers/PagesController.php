@@ -7,30 +7,97 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        $title = 'welcome to this application 2020';
-        //return view('pages.index',compact('title'));
-        return view('pages.index')->with('title',$title);
+
+        $data['title'] = 'Welcome';
+        $data['home'] = 'active';
+        $data['about'] = '';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.index', $data);
     }
     public function staff(){
-        
-        return view('pages.staff');
+
+        $data['title'] = 'Our staff members';        
+        $data['home'] = '';
+        $data['about'] = 'active';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.staff', $data);
     }
     public function calender(){
 
-        return view('pages.calender');
+        $data['title'] = 'Academic Calendar';
+        $data['home'] = '';
+        $data['about'] = '';
+        $data['calendar'] = 'active';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.calender', $data);
 
     }
     public function aboutSchool(){
-        
-        return view('pages.about_school');
+
+        $data['title'] = 'About our school';
+        $data['home'] = '';
+        $data['about'] = 'active';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.about_school', $data);
     }
 
     public function announcements(){
-        return view('pages.announcements');
+
+        $data['title'] = 'Annoucements';
+        $data['home'] = '';
+        $data['about'] = '';
+        $data['calendar'] = '';
+        $data['announcements'] = 'active';
+        $data['contact'] = '';
+
+        return view('pages.announcements', $data);
     }
 
     public function announcement(){
-        return view('pages.announcement');
+
+        $data['title'] = 'Announcement';
+        $data['home'] = '';
+        $data['about'] = '';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.announcement', $data);
+    }
+
+    public function contact(){
+
+        $data['title'] = 'Get in touch with us';
+        $data['home'] = '';
+        $data['about'] = '';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = 'active';
+
+        return view('pages.contact', $data);
+    }
+
+    public function registration() {
+      
+        $data['title'] = 'Register your kid today';        
+        $data['home'] = '';
+        $data['about'] = '';
+        $data['calendar'] = '';
+        $data['announcements'] = '';
+        $data['contact'] = '';
+
+        return view('pages.registration', $data);
     }
 }
 
