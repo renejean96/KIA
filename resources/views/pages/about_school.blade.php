@@ -53,30 +53,30 @@
             <div class="col-md-4">
               <div class="card">
                 <h3 class="stat-number"><i class="bx bx-group" style="color: #5e55da;"></i></h3>
-                <h3>3425 Pupils</h3>
+                <h3>795 Pupils</h3>
                 <br>
                 <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  We currently have 315 children in nursery and 480 more children in primary school.
                 </p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card">
                 <h3 class="stat-number"><i class="bx bx-user-voice" style="color: #e80368;"></i></h3>
-                <h3>45 Teachers</h3>
+                <h3>15 Teachers</h3>
                 <br>
                 <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  As of today, Our school has fifteen teachers for both nursery and primary school.
                 </p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card">
                 <h3 class="stat-number"><i class="bx bx-badge-check" style="color: #5578ff;"></i></h3>
-                <h3>4 Alumni Classes</h3>
+                <h3>3 Alumni Classes</h3>
                 <br>
                 <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  We have so far produced three classes for the  national examinations, starting from 2017 to 2019.
                 </p>
               </div>            
             </div>          

@@ -8,22 +8,22 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-        <li class="active"><a href="{{'/'}}">Home</a></li>
-          <li class="drop-down"><a href="#">About</a>
+        <li class=" {{ $home }} "><a href="{{'/'}}">Home</a></li>
+          <li class="drop-down  {{ $about }} "><a href="#">About</a>
             <ul>
             <li><a href="{{'/about/school'}}">Our School</a></li>
               <li><a href="{{'/about/staff'}}">Staff members</a></li>
             {{-- <li><a href="{{'about/gallery'}}">Gallery</a></li> --}}
             </ul>
           </li>          
-        <li><a href="{{'/calender'}}">Academic Calendar</a></li>
-        <li><a href="{{'/announcements'}}">Announcements</a></li>
-        <li><a href="{{'/contact'}}">Contact</a></li>
+        <li class=" {{ $calendar }} "><a href="{{'/calendar'}}">Academic Calendar</a></li>
+        <li class=" {{ $announcements }} "><a href="{{'/announcements'}}">Announcements</a></li>
+        <li class=" {{ $contact }} "><a href="{{'/contact'}}">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
-    <a href="{{'/register'}}" class="get-started-btn">Registration</a>
+    <a href="{{'/registration'}}" class="get-started-btn">Registration</a>
 
     </div>
   </header><!-- End Header -->

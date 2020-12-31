@@ -34,7 +34,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Keep yourself updated with school news</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -55,7 +55,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">Kigali Infants Academy</a>
+          Designed by <a href="{{'/login'}}" target = "blank">Kigali Infants Academy</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -70,7 +70,7 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="{{URL::to('')}}/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="{{URL::to('')}}/assets/vendor/jquery/jquery.min.js"></script>  
   <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>

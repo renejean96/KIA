@@ -40,6 +40,7 @@ section.facts .section-title {
     font-weight: 900;    
 }
 
+section.contact .section-title,
 section.announcements .section-title,
 section.calendar .section-title,
 section.staff .section-title{
@@ -51,6 +52,47 @@ section.staff .section-title{
     font-weight: 900;    
 }
 
+section.contact .section-title{
+    margin-top: 7%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    font-weight: 900;    
+}
+
+section.stats {
+    background-color: #f5f7f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+section.stats .counters .stat {
+    font-weight: 900;
+    color: #5fcf80;
+    font-size: 17pt;
+}
+
+section.stats .counters p {
+    font-weight: 600;
+    padding-top: 2.5%;
+    color: #445052;
+}
+
+section.stats .section-title {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-bottom: 1.5%;
+    font-weight: 900;
+}
+
+section.stats .sub-title {
+    text-align: center;
+    color: grey;
+    margin-bottom: 5%;
+}
+
+section.contact .sub-title,
 section.announcements .sub-title,
 section.calendar .sub-title,
 section.staff .sub-title {
@@ -302,4 +344,7 @@ section.dashboard .main-space .main-form .form-control {
 }
 .login-form .panel-body h6{ 
     margin-top: 5%;
+}
+.staff .member img {
+    height: 245px;
 }

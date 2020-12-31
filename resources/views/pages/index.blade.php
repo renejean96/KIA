@@ -58,29 +58,27 @@
         </section><!-- End About Section -->
     
         <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts section-bg">
-          <div class="container">
+        <section id="stats" class="stats">
+          <div class="container stats-section" data-aos="fade-up">
     
+            <h3 class="section-title">SCHOOL PERFORMANCE</h3>
+            <h6 class="sub-title">Our pupils performance in national examinations from 2017 to 2019</h6>
+
             <div class="row counters">
     
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">1232</span>
-                <p>Nursery Pupils</p>
+              <div class="col-md-4 text-center">
+                <span data-toggle="counter-up" class = "stat">3 Alumni Classes</span>
+                <p>110 Pupils (2017 - 2019)</p>
               </div>
     
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">421</span>
-                <p>Primary Pupils</p>
+              <div class="col-md-4 text-center">
+                <span data-toggle="counter-up" class = "stat">93.7%</span>
+                <p>Division I</p>
               </div>
     
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">64</span>
-                <p>Teachers</p>
-              </div>
-    
-              <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">15</span>
-                <p>Trainers</p>
+              <div class="col-md-4 text-center">
+                <span data-toggle="counter-up" class = "stat">6.3%</span>
+                <p>Division II</p>
               </div>
     
             </div>
@@ -100,7 +98,7 @@
                     We have got the best resources for your children. Our qualified teachers shape your children's minds with sharp skills.
                   </p>
                   <div class="text-center">
-                    <a href="about.html" class="more-btn">Explore schoolfees <i class="bx bx-chevron-right"></i></a>
+                    <a href="{{'/about/school'}}" class="more-btn">Explore our school <i class="bx bx-chevron-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -163,7 +161,7 @@
               <div class="col-lg-3 col-md-4 mt-4">
                 <div class="icon-box">
                   <i class="bx bx-cloud-rain" style="color: #26811e;"></i>
-                  <h3><a href="">Envirronment club</a></h3>
+                  <h3><a href="">Environment club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4">
@@ -196,4 +194,3 @@
   @section('footer')
     @include('inc.footer')    
   @endsection
-
