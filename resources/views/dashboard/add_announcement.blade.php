@@ -28,14 +28,15 @@
 
             <br>
             <div class="main-form">
-              <form method="POST">
+            <form method="POST" action='{{ route('announcement.store') }}'>
+              @csrf
 
                 <label>Announcement Title</label>
                 <input type="text" class="form-control" placeholder="Enter subject here" name="title">
                 <label>Posting as: </label>
                 <input type="text"  class="form-control" placeholder="Eg: Head Teacher" name="author">
                 <label>Description</label>
-                <textarea class="form-control" placeholder="Enter description here" name="description" cols = "3" rows="3"></textarea> 
+                <textarea class="form-control" placeholder="Enter description here" name="body" cols = "3" rows="3"></textarea> 
         
                 <br>
                 <button class="btn btn-success"><i class="bx bx-save"></i> &nbsp SAVE ANNOUNCEMENT</button>           

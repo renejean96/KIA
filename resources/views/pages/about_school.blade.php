@@ -23,9 +23,8 @@
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
               <h3>How we started?</h3>
               <p class="about-history">
-                Kigali Infants Academy is a school that started in 2013, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Kigali Infants Academy is a school that started in 2014,with only 4 classes: baby class,middle class and primary 1&2. during that time
+                baby class had 36students,middle class 36 students,top class 38 students,primary level one 37 student,level two 36 students.
               </p>
               <br>
               <h3>Our core values</h3>
