@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h3>Kigali Infants Academy</h3>
             <p>
               KN 456 St. Gasogi, Kigali <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> +250 788 423 165<br>
+              <strong>Email:</strong> kigaliinfantsacademy@gmail.com<br>
             </p>
           </div>
 
@@ -23,23 +23,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Communication</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{'/calender'}}">Academic Calendar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{'/calendar'}}">Academic Calendar</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{'/announcements'}}">Announcements</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{'/contact'}}">Contact Us</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Keep yourself updated with school news</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
         </div>
       </div>
     </div>
@@ -51,17 +42,13 @@
           &copy; Kigali Infants Academy Property
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
           Designed by <a href="{{'/login'}}" target = "blank">Kigali Infants Academy</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/AcademyKigali" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://m.facebook.com/Kigali-Infants-Academy-104052771562199/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/kigaliinfantsacademy/" class="instagram"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->

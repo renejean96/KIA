@@ -14,7 +14,7 @@
           <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
             <h1>Success,<br>Begins here</h1>
             <h2>A modern nursery & primary school for your children</h2>
-            <a href="courses.html" class="btn-get-started">Register Now</a>
+            <a href="{{'/registration'}}"class="btn-get-started">Register Now</a>
           </div>
         </section><!-- End Hero -->
     <main id="main">
@@ -137,49 +137,49 @@
               <div class="col-lg-3 col-md-4">
                 <div class="icon-box">
                   <i class="bx bx-group" style="color: #ff2cca;"></i>
-                  <h3><a href="">Debate Club</a></h3>
+                  <h3><a href="#">Debate Club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                 <div class="icon-box">
                   <i class="bx bx-music" style="color: #5578ff;"></i>
-                  <h3><a href="">Talent Club</a></h3>
+                  <h3><a href="#">Talent Club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                 <div class="icon-box">
                   <i class="bx bx-football" style="color: #e80368;"></i>
-                  <h3><a href="">Sports competitions</a></h3>
+                  <h3><a href="#">Sports competitions</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                 <div class="icon-box">
                   <i class="bx bx-body" style="color: #e361ff;"></i>
-                  <h3><a href="">Traditional dance</a></h3>
+                  <h3><a href="#">Traditional dance</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4">
                 <div class="icon-box">
                   <i class="bx bx-cloud-rain" style="color: #26811e;"></i>
-                  <h3><a href="">Environment club</a></h3>
+                  <h3><a href="#">Environment club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4">
                 <div class="icon-box">
                   <i class="bx bx-camera-movie" style="color: #ffa76e;"></i>
-                  <h3><a href="">Media Club</a></h3>
+                  <h3><a href="#">Media Club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4">
                 <div class="icon-box">
                   <i class="bx bx-book-reader" style="color: #11dbcf;"></i>
-                  <h3><a href="">Languages Club</a></h3>
+                  <h3><a href="#">Languages Club</a></h3>
                 </div>
               </div>
               <div class="col-lg-3 col-md-4 mt-4">
                 <div class="icon-box">
                   <i class="bx bx-run" style="color: #5e55da;"></i>
-                  <h3><a href="">Sports Acitivities</a></h3>
+                  <h3><a href="#">Sports Acitivities</a></h3>
                 </div>
               </div>
             </div>
