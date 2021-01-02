@@ -13,6 +13,7 @@
         <section id="hero" class="d-flex justify-content-center align-items-center">
           <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
             <h1>Success,<br>Begins here</h1>
+            <br>
             <h2>A modern nursery & primary school for your children</h2>
             <a href="courses.html" class="btn-get-started">Register Now</a>
           </div>

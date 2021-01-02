@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Staff extends Model
+class AcademicCalendar extends Model
 {
     protected $fillable = [
-        'names', 'phone', 'position', 'description', 'email', 'photo'
+        'period', 'details'
     ];
 }

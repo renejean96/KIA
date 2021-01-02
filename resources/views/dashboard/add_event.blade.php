@@ -29,16 +29,18 @@
 
             <br>
             <div class="main-form">
-              <form method="POST">
+              
+              {!! Form::open(['action' => 'CalendarController@store','method' => 'POST']) !!}
 
                 <label>Enter Period</label>
                 <input type="text" class="form-control" placeholder="Enter period here" name="period">
                 <label>Event Description</label>
-                <textarea class="form-control" placeholder="Enter description here" name="description" cols = "3" rows="3"></textarea>               
+                <textarea class="form-control" placeholder="Enter description here" name="details" cols = "3" rows="3"></textarea>               
                 <br>
                 <button class="btn btn-success"><i class="bx bx-save"></i> &nbsp SAVE EVENT</button>           
 
-              </form>
+              {!! Form::close() !!}              
+              
             </div>
           </div>
         </div>

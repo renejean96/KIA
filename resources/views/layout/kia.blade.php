@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{{ $title }} - Kigali Infants Academy</title>
+  <title>{{ $title ?? 'Academic Portal' }} - Kigali Infants Academy</title>
   @yield('header')
 </head>
 <body>

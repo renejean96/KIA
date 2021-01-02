@@ -13,9 +13,9 @@ class CreateAcademicCalendersTable extends Migration
      */
     public function up()
     {
-        Schema::create('academic_calenders', function (Blueprint $table) {
+        Schema::create('academic_calendars', function (Blueprint $table) {
             $table->id();
-            $table->time('period');
+            $table->string('period');
             $table->text('details');
             $table->timestamps();
         });

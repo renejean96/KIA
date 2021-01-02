@@ -47,7 +47,7 @@ Route::get('/announcements','PagesController@announcements');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
 Route::get('/view/announcement','DashboardControl@dashboard');
-Route::get('/view/calender','DashboardControl@viewCalender');
+Route::get('/view/calendar','DashboardControl@viewCalender');
 Route::get('/view/member','DashboardControl@viewMember');
 Route::get('/view/message','DashboardControl@viewMessage');
 
@@ -56,6 +56,11 @@ Route::get('/add/member','DashboardControl@addMember');
 Route::get('/add/event','DashboardControl@addEvent');
 
 Route::resource('posts','PostsController');
+Route::resource('events','CalendarController');
+Route::resource('staff','StaffController');
+
+Route::get('/events/delete/{id}', 'CalendarController@destroy')
+     ->name('events.destroy');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
