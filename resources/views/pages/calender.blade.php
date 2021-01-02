@@ -36,14 +36,8 @@
                                 23rd November - 01 December 2020
                             </div>
                             <div class="body-desc col-md-8">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                            <div class="body-date col-md-4">
-                                23rd November - 01 December 2020
-                            </div>
-                            <div class="body-desc col-md-8">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>                            
+                                start-ending of first and second term
+                            </div>                      
                         </div>                    
                     </div>
                 </div>

@@ -16,7 +16,7 @@
 
       <div class="row" data-aos="zoom-in" data-aos-delay="100">            
         <div class="col-md-8">
-          <h3 class="section-title">Amategeko mashya agenga ikigo: amabwiriza yo gukurikizwa</h3>
+          <h3 class="section-title">we are registering new students</h3>
           <div class="sub-title">
             <h5><b>From:</b> Principal<br>
               <b>Pubished On:</b> 16th December, 2020</h5>
@@ -24,13 +24,9 @@
           <br>
           <p class="text-justify">
             
-            Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. 
-
-            <br>
-            Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. 
-
-
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+            School is happy to announce that we started to register, student from baby class to top classes and primary one to primary 3. 
+            About starting first, second and third term we will communicate you on  our website and to all of  our social platforms.
+            
 
           </p>
         </div>
@@ -39,17 +35,17 @@
           <div class="side-link">
             <a href="">
               <h5>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium
+                School provide breakfast and lunch to students
               </h5>
             </a>
             <a href="">
               <h5>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium
+                How to pay school fees
               </h5>      
             </a>                      
             <a href="">
               <h5>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium
+                School provide transport
               </h5>
             </a>
           </div>

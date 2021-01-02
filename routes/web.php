@@ -64,4 +64,6 @@ Route::get('/events/delete/{id}', 'CalendarController@destroy')
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-
+/*messages*/
+Route::get('dashboard/announcement','AnnouncementsControl@index');
+Route::post('/announcement','AnnouncementsControl@store')->name('announcement.store');

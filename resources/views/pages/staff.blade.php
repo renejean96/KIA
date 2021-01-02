@@ -67,8 +67,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/abdou.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Abdou Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Abdou</h4>
+                  <span>English Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -78,8 +78,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/emmanuel.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Emmanuel Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Sibomana Emmanuel</h4>
+                  <span>Kinyarwanda Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -89,8 +89,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/dieudonne.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Dieudonne Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Dieudonne</h4>
+                  <span>Kinyarwanda Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -100,8 +100,8 @@
                 <div class="member">
                   <img src="{{URL::to('')}}/assets/img/staff/prosper.png" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4>Prosper Tr</h4>
-                    <span>Teacher</span>
+                    <h4>Hakizimana Prosper</h4>
+                    <span>French Teacher</span>
                     <p></p>
                   </div>
                 </div>
@@ -111,8 +111,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/betty.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Betty Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Mukabahinda Betty</h4>
+                  <span>Social studies Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -122,8 +122,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/david.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>David Tr</h4>
-                  <span>Teacher</span>
+                  <h4>David</h4>
+                  <span>Math Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -133,8 +133,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/evariste.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Evariste Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Niyonsaba Evariste</h4>
+                  <span>French Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -144,8 +144,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/joshua.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Joshua Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Omutta Joshua</h4>
+                  <span>English Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -155,8 +155,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/joel.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Joel Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Joel</h4>
+                  <span>English Teacher</span>
                   <p></p>
                 </div>
               </div>
@@ -166,8 +166,8 @@
               <div class="member">
                 <img src="{{URL::to('')}}/assets/img/staff/claude.png" class="img-fluid" alt="">
                 <div class="member-content">
-                  <h4>Claude Tr</h4>
-                  <span>Teacher</span>
+                  <h4>Ngavubwiko Claude</h4>
+                  <span>Kinyarwanda Teacher</span>
                   <p></p>
                 </div>
               </div>

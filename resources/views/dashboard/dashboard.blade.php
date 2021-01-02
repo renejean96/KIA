@@ -41,17 +41,30 @@
                         <th>Date Added</th>                        
                         <th>Author</th>                                          
                         <th colspan="3">Action</th>
-                    </tr>  
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Inama y'ababyeyi irahafi cyane</td>
-                        <td>24 Dec, 2020</td>                                              <td>Principal</td>                                   
-                        <td><a href="#annsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
-                        <td><a href="#" class="btn btn-warning">Edit</a></td>
-                        <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
-                    </tr>   
+                    </tr>
+                    @if(count($datas) > 0 )
+                    @php
+                          $i=0;
+                    @endphp 
+                    @foreach ($datas as $data)
+                    
+                         </thead>
+                         <tbody>
+                             <tr>
+                                  <td>{{++$i}}</td>
+                                  <td>{{$data->title}}</td>
+                                  <td>{{$data->created_at}}</td>                                              
+                                  <td>Principal</td>
+                              <form action="" method="POST">                                  
+                                  <td><a href="#annsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                                  <td><a href="" class="btn btn-warning">Edit</a></td>
+                                  <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
+                              </form>
+                              </tr>
+                    @endforeach
+                    @else
+                      <p>no post found</p>
+                    @endif    
                 </tbody>
             </table>
 
