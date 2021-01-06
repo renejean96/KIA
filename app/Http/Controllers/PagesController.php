@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\AcademicCalendar;
+use App\Staff;
 
 class PagesController extends Controller
 {
@@ -25,6 +27,8 @@ class PagesController extends Controller
         $data['calendar'] = '';
         $data['announcements'] = '';
         $data['contact'] = '';
+        $data['members'] = Staff::where('level', '=', 1)->get();
+        $data['teachers'] = Staff::where('level', '=', 2)->get();
 
         return view('pages.staff', $data);
     }
@@ -36,6 +40,7 @@ class PagesController extends Controller
         $data['calendar'] = 'active';
         $data['announcements'] = '';
         $data['contact'] = '';
+        $data['events'] = AcademicCalendar::orderBy('academic_calendars.created_at', 'DESC')->get();
 
         return view('pages.calender', $data);
 

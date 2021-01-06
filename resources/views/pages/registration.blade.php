@@ -21,7 +21,7 @@
             <div class="col-md-2"></div>
             <div class=" col-md-8 col-md-offset-2 form-box">
 
-                <form role="form" action="" method="post" class="f1">
+                {!! Form::open(['action' => 'PupilController@store','method' => 'POST', 'role' => 'form', 'class' => 'f1']) !!}            
 
                     <h3>Register a pupil</h3>
                     <p class="subtitle">Your children's future starts here, right now!</p>
@@ -40,46 +40,23 @@
                                 <p>Parents Details</p>
                         </div>
                     </div>
-                    <!-- <div class="f1-steps row">
-                        <div class="col-md-4">
-                            <div class="f1-step active">
-                                <div class="f1-step-icon"><i class="bx bx-user"></i></div>
-                                <p>Pupil's Details</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="f1-step">
-                                <div class="f1-step-icon"><i class="bx bx-key"></i></div>
-                                <p>Parents Details</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="f1-step">
-                                <div class="f1-step-icon"><i class="bx bx-twitter"></i></div>
-                                <p>Social</p>
-                            </div>                            
-                        </div>
-                    </div> -->
                     
                     <fieldset>
                         <!-- <h4>Tell us who you are:</h4> -->
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only">First name</label>
-                                <input type="text" name="f1-first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name">
+                                <input type="text" name="first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only">Last name</label>
-                                <input type="text" name="f1-last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name">
+                                <input type="text" name="last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="sr-only">Nationality</label>
-                            <input type="text" name="f1-nationality" placeholder="Nationality" class="f1-first-name form-control" id="f1-first-name">
+                            <input type="text" name="nationality" placeholder="Nationality" class="f1-first-name form-control" id="f1-first-name">
                         </div>
                         <div class="form-group">
                             <h6><b>Date of Birth</b> &nbsp&nbsp&nbsp</h6>
-                            <input type="date" name="f1-nationality" placeholder="Nationality" class="f1-first-name form-control" id="f1-first-name">
+                            <input type="date" name="dob" class="f1-first-name form-control" id="f1-first-name">
                         </div>                                        
                         <div class="form-group">
                             <h6><b>Sex</b> &nbsp&nbsp&nbsp</h6>
@@ -88,9 +65,9 @@
                         </div>                                
                         <div class="form-group">
                             <h6><b>What will the pupil have at school?</b> &nbsp&nbsp&nbsp</h6>
-                            <input type="checkbox" > Lunch  &nbsp&nbsp&nbsp
-                            <input type="checkbox" > Breakfast  &nbsp&nbsp&nbsp
-                            <input type="checkbox" > Transport  &nbsp&nbsp&nbsp
+                            <input type="checkbox" name = "lunch"> Lunch  &nbsp&nbsp&nbsp
+                            <input type="checkbox" name = "breakfast"> Breakfast  &nbsp&nbsp&nbsp
+                            <input type="checkbox" name = "transport"> Transport  &nbsp&nbsp&nbsp
                         </div>                        
                         <div class="f1-buttons">
                             <button type="button" class="btn btn-next">Next</button>
@@ -102,31 +79,31 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-email">Country</label>
-                                <input type="text" value="Rwanda" name="f1-email" class="f1-email form-control" id="f1-email" >
+                                <input type="text" value="Rwanda" name="country" class="f1-email form-control" id="f1-email" >
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-text">Province</label>
-                                <input type="text" name="f1-text" placeholder="Province..." class="f1-text form-control" id="f1-text">
+                                <input type="text" name="province" placeholder="Province..." class="f1-text form-control" id="f1-text">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-email">Sector</label>
-                                <input type="text" placeholder="Sector..." name="f1-email" class="f1-email form-control" id="f1-email">
+                                <label class="sr-only" for="f1-email">District</label>
+                                <input type="text" placeholder="Sector..." name="district" class="f1-email form-control" id="f1-email">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-text">Cell</label>
-                                <input type="text" name="f1-text" placeholder="Cell..." class="f1-text form-control" id="f1-text">
+                                <label class="sr-only" for="f1-text">Sector</label>
+                                <input type="text" name="sector" placeholder="Cell..." class="f1-text form-control" id="f1-text">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-text">Cell</label>
-                                <input type="text" name="f1-text" placeholder="Cell..." class="f1-text form-control" id="f1-text">
+                                <input type="text" name="cell" placeholder="Cell..." class="f1-text form-control" id="f1-text">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-text">Village</label>
-                                <input type="text" name="f1-text" placeholder="Village..." class="f1-text form-control" id="f1-text">
+                                <input type="text" name="village" placeholder="Village..." class="f1-text form-control" id="f1-text">
                             </div>
                         </div>
                         <div class="f1-buttons">
@@ -139,79 +116,79 @@
                         <h5>Father Details:</h5>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="father-names" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="father-idn" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="father-phone" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="father-email" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>                        
                         <div class="form-group">
                             <label class="sr-only" for="f1-google-plus">Occupation</label>
-                            <input type="text" name="f1-google-plus" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
+                            <input type="text" name="father-occupation" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
                         </div>
 
                         <h5>Mother Details:</h5>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="mother-names" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="mother-idn" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="mother-phone" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="mother-email" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>                        
                         <div class="form-group">
                             <label class="sr-only" for="f1-google-plus">Occupation</label>
-                            <input type="text" name="f1-google-plus" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
+                            <input type="text" name="mother-occupation" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
                         </div>                        
 
                         <h5>Guardian Details:</h5>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="guardian-names" placeholder="Names..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="guardian-idn" placeholder="ID Number..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-facebook">Facebook</label>
-                                <input type="text" name="f1-facebook" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
+                                <label class="sr-only" for="f1-facebook"></label>
+                                <input type="text" name="guardian-phone" placeholder="Phone Number..." class="f1-facebook form-control" id="f1-facebook">
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="sr-only" for="f1-twitter">Twitter</label>
-                                <input type="text" name="f1-twitter" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
+                                <label class="sr-only" for="f1-twitter"></label>
+                                <input type="text" name="guardian-email" placeholder="Email Address..." class="f1-twitter form-control" id="f1-twitter">
                             </div>
                         </div>                        
                         <div class="form-group">
                             <label class="sr-only" for="f1-google-plus">Occupation</label>
-                            <input type="text" name="f1-google-plus" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
+                            <input type="text" name="guardian-occupation" placeholder="Occupation..." class="f1-google-plus form-control" id="f1-google-plus">
                         </div>
 
                         <div class="f1-buttons">
@@ -220,7 +197,7 @@
                         </div>
                     </fieldset>
                 
-                </form>
+                {!! Form::close() !!}       
             </div>
             <div class="col-md-2"></div>
             

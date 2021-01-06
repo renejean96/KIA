@@ -353,3 +353,9 @@ p.no-entry {
     margin-bottom: 20%;
     font-weight: 500;    
 }
+p.no-data {
+    /* text-align: center;*/
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
