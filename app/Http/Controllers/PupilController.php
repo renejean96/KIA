@@ -8,6 +8,8 @@ use App\PupilFather;
 use App\PupilMother;
 use App\PupilGuardian;
 
+use PDF;
+
 use Illuminate\Http\Request;
 
 class PupilController extends Controller
@@ -93,7 +95,16 @@ class PupilController extends Controller
             'email' => $request['guardian-email'],
             'phone' => $request['guardian-phone'],
             'occupation' => $request['guardian-occupation']    
-        ]);        
+        ]);
+
+        $data['info'] = Pupil::where('id','=',$pupil->id)->get();
+        $data['address'] = PupilAddress::where('pupilId','=',$pupil->id)->get();
+        $data['father'] = PupilFather::where('pupilId','=',$pupil->id)->get();
+        $data['mother'] = PupilMother::where('pupilId','=',$pupil->id)->get();        
+        $data['guardian'] = PupilGuardian::where('pupilId','=',$pupil->id)->get();
+
+        $pdf = PDF::loadView('pdf.registrationForm', $data);
+        return $pdf->stream('registrationForm.pdf');        
     }
 
     /**
