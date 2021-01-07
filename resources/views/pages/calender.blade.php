@@ -32,12 +32,21 @@
                             </div>
                         </div>
                         <div class="body row">
-                            <div class="body-date col-md-4">
-                                23rd November - 01 December 2020
-                            </div>
-                            <div class="body-desc col-md-8">
-                                start-ending of first and second term
-                            </div>                      
+                        
+                        @if(count($events) > 0 )
+                            @foreach ($events as $dt)                        
+                                
+                                <div class="body-date col-md-4">
+                                    {{ $dt->period }}
+                                </div>
+                                <div class="body-desc col-md-8">
+                                    {{ $dt->details }}
+                                </div>
+
+                            @endforeach        
+                        @else
+                            <p class = "text-center no-data"> No events for now </p>
+                        @endif                        
                         </div>                    
                     </div>
                 </div>

@@ -10,6 +10,7 @@ class PDFController extends Controller
 {
     public function printForm() {
 
+        $id = 1;
         $data = Pupil::where('id', '=', $id)->first();
 
         $pdf = PDF::loadView('pdf.registrationForm', $data);

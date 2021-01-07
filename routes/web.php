@@ -51,13 +51,15 @@ Route::get('/view/calendar','CalendarController@index');
 Route::get('/view/member','StaffController@index');
 Route::get('/view/message','MessagesControl@index');
 
-//Route::get('/add/announcement','DashboardControl@addAnnouncement');
+Route::get('/print/test','PDFController@printForm');
+Route::get('/add/announcement','DashboardControl@addAnnouncement');
 Route::get('/add/member','DashboardControl@addMember');
 Route::get('/add/event','DashboardControl@addEvent');
 
 Route::resource('posts','PostsController');
 Route::resource('events','CalendarController');
 Route::resource('staff','StaffController');
+Route::resource('pupil','PupilController');
 
 Route::get('/events/delete/{id}', 'CalendarController@destroy')
      ->name('events.destroy');
