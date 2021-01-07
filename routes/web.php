@@ -46,14 +46,9 @@ Route::get('/registration','PagesController@registration');
 Route::get('/announcements','PagesController@announcements');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
-<<<<<<< HEAD
-Route::get('/view/announcement','DashboardControl@index');
-Route::get('/view/calender','DashboardControl@viewCalender');
-=======
 Route::get('/view/announcement','DashboardControl@dashboard');
-Route::get('/view/calendar','DashboardControl@viewCalender');
->>>>>>> eb638203d3574b658e0066cad36c137cc68fa40f
-Route::get('/view/member','DashboardControl@viewMember');
+Route::get('/view/calendar','CalendarController@index');
+Route::get('/view/member','StaffController@index');
 Route::get('/view/message','MessagesControl@index');
 
 //Route::get('/add/announcement','DashboardControl@addAnnouncement');
