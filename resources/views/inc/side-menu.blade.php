@@ -2,7 +2,7 @@
     <br><br>
     <ul class="list-unstyled list-group side-menu">
       <li class="list-group-item active">
-       <a href="{{'/view/announcement'}}"><i class="bx bx-file"></i> &nbsp
+       <a href="{{'/dashboard'}}"><i class="bx bx-file"></i> &nbsp
           Announcements</a></li>
       <li class="list-group-item"><a href="{{'/view/calendar'}}">
         <i class="bx bx-calendar"></i> &nbspAcademic Calendar</a></li>

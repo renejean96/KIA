@@ -10,6 +10,21 @@ use Illuminate\Http\Request;
 
 class MessagesControl extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index(){
         $messages = Messages::orderBy('created_at','desc')->paginate(3);
         return view('dashboard.view_message')->with('messages',$messages);
@@ -30,6 +45,12 @@ class MessagesControl extends Controller
         $message->message=$request->input('message');
         $message->save();
         return redirect('/contact')->with('success','Your message has been sent. thank you!');
+    }
+    public function destroy($id) {
+     
+        $announcement = Messages::where('id', '=', $id)->delete();
+        
+        return redirect('/dashboard');
     }
     
 }

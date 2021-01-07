@@ -28,6 +28,7 @@
             </div>
 
             <br>
+            @if(count($messages) > 0 )
 
             <table class="table table-bordered table-hover">
                 <thead>
@@ -40,7 +41,7 @@
                     </tr>  
                 </thead>
                 <tbody>
-                  @if(count($messages) > 0 )
+                  
                   @php
                         $i=0;
                   @endphp 
@@ -54,17 +55,67 @@
                                 <td>{{$message->subject}}</td>
                                 <td>{{$message->created_at}}</td>                                              
                             <form action="" method="POST">                                  
-                                <td><a href="#annsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                                <td><a href="#messageModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
                                 <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
                             </form>
                             </tr>
+                            <!-- Modal --> 
+                            <div class="modal fade details" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                              <div class="modal-dialog modal-lg"> 
+                                  <div class="modal-content"> 
+                                      <div class="modal-header"> 
+                                          <h6 class="modal-title" id="myModalLabel"> 
+                                            <strong>FULL MESSAGE</strong>
+                                          </h6>
+                                      </div> 
+                                      <div class="modal-body"> 
+                                            <h6><strong>Announcement Description</strong></h6>                   
+                                              <p>
+                                                {{ $message->message }}
+                                              </p>                
+                                      </div> 
+                                      <div class="modal-footer"> 
+                                          <button type="button" class="btn btn-default" data-dismiss="modal"><b>Close</b></button>
+                                      </div> 
+                                  </div>
+                                  <!-- /.modal-content -->
+                          </div>
+                      </div>
+                    <!-- /.modal -->
+
+                    <!-- Modal --> 
+                    <div class="modal fade details" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                            <div class="modal-dialog"> 
+                                <div class="modal-content"> 
+                                    <div class="modal-header"> 
+                                        <h6 class="modal-title" id="myModalLabel"> 
+                                          <strong>WARNING</strong>
+                                        </h6>
+                                    </div> 
+                                    <div class="modal-body">                       
+                                      <p>
+                                        You are about to delete <b>{{$message->subject}}</b> message. Are you sure to continue?
+                                      </p>              
+                                    </div> 
+                                    <div class="modal-footer"> 
+                                        <a href = "{{ route('message.destroy', $message->id) }}">
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><b>Cancel</b></button>
+                                    </div> 
+                                </div>
+                                <!-- /.modal-content -->
+                        </div>
+                    </div>
+                    <!-- /.modal -->
                   @endforeach
-                  @else
-                    <p>no post found</p>
-                  @endif    
+                  
+                     
               </tbody>
             </table>
             {{$messages->links()}}
+            @else
+              <p class = "text-center no-entry"> No announcement message </p>
+            @endif 
           </div>
         </div>
 

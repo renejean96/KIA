@@ -43,7 +43,7 @@ Route::get('/about/school','PagesController@aboutSchool');
 Route::get('/calendar','PagesController@calender');
 Route::get('/contact','PagesController@contact');
 Route::get('/registration','PagesController@registration');
-Route::get('/announcements','PagesController@announcements');
+Route::get('/announcements','AnnouncementsControl@index');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
 Route::get('/view/announcement','DashboardControl@dashboard');
@@ -64,11 +64,16 @@ Route::get('/events/delete/{id}', 'CalendarController@destroy')
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
-/*messages*/
+/*announcement*/
 Route::get('/add/announcement','AnnouncementsControl@create');
 Route::post('store','AnnouncementsControl@store');
+Route::get('/announcement/delete/{id}', 'AnnouncementsControl@destroy')
+     ->name('announcement.destroy');
 
+/*messages*/
 Route::post('/save','MessagesControl@save');
+Route::get('/message/delete/{id}', 'MessagesControl@destroy')
+     ->name('message.destroy');
 
 Auth::routes();
 
