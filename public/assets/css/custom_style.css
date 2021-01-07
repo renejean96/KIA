@@ -348,3 +348,8 @@ section.dashboard .main-space .main-form .form-control {
 .staff .member img {
     height: 245px;
 }
+p.no-entry {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-weight: 500;    
+}
