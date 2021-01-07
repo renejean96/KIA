@@ -25,7 +25,6 @@
 
 
         
-
     @include('inc.dash_footer')
 
 </body>

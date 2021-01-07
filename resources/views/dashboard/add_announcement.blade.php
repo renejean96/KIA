@@ -19,6 +19,7 @@
           @include('inc.side-menu')
 
           <div class="col-md-9 main-space">
+            @include('inc.messages')
             
             <div class="row">
               <div class="col-md-8"><h5>ADD A NEW ANNOUNCEMENT</h5></div>
@@ -28,7 +29,7 @@
 
             <br>
             <div class="main-form">
-            <form method="POST" action='{{ route('announcement.store') }}'>
+            <form method="POST" action="{{'/store'}}">
               @csrf
 
                 <label>Announcement Title</label>

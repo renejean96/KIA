@@ -9,10 +9,17 @@
   @endsection
 
   @section('content')
+    
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+        </div>
+    @endif
     <main id="main">
     <!-- ======= Trainers Section ======= -->
     <section id="dashboard" class="dashboard">
-        <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
+        
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">  
                     
@@ -20,6 +27,7 @@
 
           <div class="col-md-9 main-space">
             
+            @include('inc.messages')
             <div class="row">
               <div class="col-md-8"><h5>ALL ANNOUNCEMENTS</h5></div>
               <div class="col-md-4">
@@ -42,21 +50,21 @@
                         <th>Author</th>                                          
                         <th colspan="3">Action</th>
                     </tr>
-                    @if(count($datas) > 0 )
+                    @if(count($announcements) > 0 )
                     @php
                           $i=0;
                     @endphp 
-                    @foreach ($datas as $data)
+                    @foreach ($announcements as $announcement)
                     
                          </thead>
                          <tbody>
                              <tr>
                                   <td>{{++$i}}</td>
-                                  <td>{{$data->title}}</td>
-                                  <td>{{$data->created_at}}</td>                                              
+                                  <td>{{$announcement->title}}</td>
+                                  <td>{{$announcement->created_at}}</td>                                              
                                   <td>Principal</td>
                               <form action="" method="POST">                                  
-                                  <td><a href="#annsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                              <td><a href="#detailsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
                                   <td><a href="" class="btn btn-warning">Edit</a></td>
                                   <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
                               </form>
@@ -67,12 +75,12 @@
                     @endif    
                 </tbody>
             </table>
-
+            {{$announcements->links()}}
           </div>
         </div>
-
-        </div>
-      </section><!-- End Trainers Section -->
+        @include('inc.modals')
+      </div>
+    </section><!-- End Trainers Section -->
 
 
   </main><!-- End #main -->

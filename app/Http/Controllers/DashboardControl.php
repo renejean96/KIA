@@ -1,14 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Announcements;
 use Illuminate\Http\Request;
 
 class DashboardControl extends Controller
 {
-    public function dashboard(){
-        return view('dashboard.dashboard');
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index(){
+        $announcements = Announcements::orderBy('created_at','desc')->paginate(3);
+        return view('dashboard.dashboard')->with('announcements',$announcements);
+    } 
+
     public function viewAnnouncement(){
         return view('dashboard.view_announcement');
     }
@@ -36,4 +53,5 @@ class DashboardControl extends Controller
     public function addEvent(){
         return view('dashboard.add_event');
     }
+    
 }

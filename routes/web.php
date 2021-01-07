@@ -46,19 +46,25 @@ Route::get('/registration','PagesController@registration');
 Route::get('/announcements','PagesController@announcements');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
-Route::get('/view/announcement','DashboardControl@dashboard');
+Route::get('/view/announcement','DashboardControl@index');
 Route::get('/view/calender','DashboardControl@viewCalender');
 Route::get('/view/member','DashboardControl@viewMember');
-Route::get('/view/message','DashboardControl@viewMessage');
+Route::get('/view/message','MessagesControl@index');
 
-Route::get('/add/announcement','DashboardControl@addAnnouncement');
+//Route::get('/add/announcement','DashboardControl@addAnnouncement');
 Route::get('/add/member','DashboardControl@addMember');
 Route::get('/add/event','DashboardControl@addEvent');
 
 Route::resource('posts','PostsController');
 
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+//Auth::routes();
+//Route::get('/home', 'HomeController@index')->name('home');
 /*messages*/
-Route::get('dashboard/announcement','AnnouncementsControl@index');
-Route::post('/announcement','AnnouncementsControl@store')->name('announcement.store');
+Route::get('/add/announcement','AnnouncementsControl@create');
+Route::post('store','AnnouncementsControl@store');
+
+Route::post('/save','MessagesControl@save');
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardControl@index');

@@ -40,17 +40,31 @@
                     </tr>  
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Muhozi Christopher</td>
-                        <td>Inama y'ababyeyi</td>
-                        <td>24 Dec, 2020</td>
-                        <td><a href="#messageModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
-                        <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>                              
-                    </tr>   
-                </tbody>
+                  @if(count($messages) > 0 )
+                  @php
+                        $i=0;
+                  @endphp 
+                  @foreach ($messages as $message)
+                  
+                       </thead>
+                       <tbody>
+                           <tr>
+                                <td>{{++$i}}</td>
+                                <td>{{$message->name}}</td>
+                                <td>{{$message->subject}}</td>
+                                <td>{{$message->created_at}}</td>                                              
+                            <form action="" method="POST">                                  
+                                <td><a href="#annsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                                <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
+                            </form>
+                            </tr>
+                  @endforeach
+                  @else
+                    <p>no post found</p>
+                  @endif    
+              </tbody>
             </table>
-
+            {{$messages->links()}}
           </div>
         </div>
 

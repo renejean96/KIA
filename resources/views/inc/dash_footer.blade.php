@@ -28,13 +28,27 @@
 
   <!-- Vendor JS Files -->
   <script src="{{URL::to('')}}/assets/vendor/jquery/jquery.min.js"></script>
-  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="{{URL::to('')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script> 
+-->
 
   <!-- Template Main JS File -->
   <script src="{{URL::to('')}}/assets/js/main.js"></script>
+  <script>
+  $('#deleteModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+  })
+</script>
+  
+  
