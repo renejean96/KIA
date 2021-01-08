@@ -51,13 +51,13 @@
                     <tr>
                         <td>#</td>
                         <td>{{ $dt->period }}</td>    
-                        <td><a href="#eventModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                        <td><a href="#{{ 'eventModal'.$dt->id }}" class="btn btn-primary" data-toggle="modal">Details</a></td>
                         <td><a href="#" class="btn btn-warning">Edit</a></td>
-                        <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>                               
+                        <td><a href="#{{ 'deleteModal'.$dt->id }}" class="btn btn-danger" data-toggle="modal">Delete</a></td>                               
                     </tr>   
                 
                     <!-- Modal --> 
-                    <div class="modal fade details" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                    <div class="modal fade details" id="{{ 'eventModal'.$dt->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                             <div class="modal-dialog modal-lg"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -83,7 +83,7 @@
 
 
                     <!-- Modal --> 
-                    <div class="modal fade details" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                    <div class="modal fade details" id="{{ 'deleteModal'.$dt->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                             <div class="modal-dialog"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
