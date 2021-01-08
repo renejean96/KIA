@@ -43,7 +43,7 @@ Route::get('/about/school','PagesController@aboutSchool');
 Route::get('/calendar','PagesController@calender');
 Route::get('/contact','PagesController@contact');
 Route::get('/registration','PagesController@registration');
-Route::get('/announcements','AnnouncementsControl@index');
+Route::get('/announcements','PagesController@announcements');
 Route::get('/announcement','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
 Route::get('/view/announcement','DashboardControl@dashboard');

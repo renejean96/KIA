@@ -18,14 +18,14 @@
         <h5 class="sub-title"> Keep up with the school news and announcements </h5>
 
             <div class="row" data-aos="zoom-in" data-aos-delay="100"> 
-              @if(count($announcements) > 0 )
-                @foreach ($announcements as $announcement)
+              @if(count($anns) > 0 )
+                @foreach ($anns as $ann)
                   <div class="col-md-4">
                     <a href="{{'/announcement'}}">                  
                       <div class="card">
-                      <h5 class="main-title">{{$announcement->title}}</h5>
-                      <h5 class="author"><b>From:</b> {{$announcement->author}}</h5>
-                      <h5 class="date"><b>Pubished On:</b> {{$announcement->created_at}}</h5>
+                      <h5 class="main-title">{{$ann->title}}</h5>
+                      <h5 class="author"><b>From:</b> {{$ann->author}}</h5>
+                      <h5 class="date"><b>Pubished On:</b> {{$ann->created_at}}</h5>
                       </div>
                     </a>
                   </div>

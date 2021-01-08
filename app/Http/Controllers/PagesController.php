@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\AcademicCalendar;
 use App\Staff;
+use App\Announcements;
 
 class PagesController extends Controller
 {
@@ -65,6 +66,7 @@ class PagesController extends Controller
         $data['calendar'] = '';
         $data['announcements'] = 'active';
         $data['contact'] = '';
+        $data['anns'] = Announcements::orderBy('announcements.created_at', 'DESC')->get();
 
         return view('pages.announcements', $data);
     }
