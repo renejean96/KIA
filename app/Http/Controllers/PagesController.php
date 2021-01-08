@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\AcademicCalendar;
 use App\Staff;
 use App\Announcements;
+use App\Messages;
 
 class PagesController extends Controller
 {
@@ -71,7 +72,7 @@ class PagesController extends Controller
         return view('pages.announcements', $data);
     }
 
-    public function announcement(){
+    public function announcement($id){
 
         $data['title'] = 'Announcement';
         $data['home'] = '';
@@ -79,6 +80,8 @@ class PagesController extends Controller
         $data['calendar'] = '';
         $data['announcements'] = '';
         $data['contact'] = '';
+        $data['announcement'] = Announcements::find($id);
+        $data['announces'] = Announcements::orderBy('announcements.created_at', 'DESC')->take(3)->get();
 
         return view('pages.announcement', $data);
     }
@@ -105,6 +108,23 @@ class PagesController extends Controller
         $data['contact'] = '';
 
         return view('pages.registration', $data);
+    }
+    /*save messages in db */
+    public function save(Request $request){
+
+        $request->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'subject'=>'required',
+            'message'=>'required'
+        ]);
+        $message = new Messages;
+        $message->name = $request->input('name');
+        $message->email=$request->input('email');
+        $message->subject=$request->input('subject');
+        $message->message=$request->input('message');
+        $message->save();
+        return redirect('/contact')->with('success','Your message has been sent. thank you!');
     }
 }
 

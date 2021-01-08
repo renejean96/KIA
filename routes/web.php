@@ -44,7 +44,7 @@ Route::get('/calendar','PagesController@calender');
 Route::get('/contact','PagesController@contact');
 Route::get('/registration','PagesController@registration');
 Route::get('/announcements','PagesController@announcements');
-Route::get('/announcement','PagesController@announcement');
+Route::get('/announcement/{id}','PagesController@announcement');
 Route::get('/dashboard','DashboardControl@dashboard');
 Route::get('/view/announcement','DashboardControl@dashboard');
 Route::get('/view/calendar','CalendarController@index');
@@ -73,10 +73,10 @@ Route::get('/announcement/delete/{id}', 'AnnouncementsControl@destroy')
      ->name('announcement.destroy');
 
 /*messages*/
-Route::post('/save','MessagesControl@save');
+Route::post('/save','PagesController@save');
 Route::get('/message/delete/{id}', 'MessagesControl@destroy')
      ->name('message.destroy');
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashboardControl@index');
+Route::get('/dashboard', 'DashboardControl@index')->name('dashboard.index');

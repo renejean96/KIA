@@ -21,7 +21,7 @@
               @if(count($anns) > 0 )
                 @foreach ($anns as $ann)
                   <div class="col-md-4">
-                    <a href="{{'/announcement'}}">                  
+                    <a href="{{'announcement/'.$ann->id}}">                  
                       <div class="card">
                       <h5 class="main-title">{{$ann->title}}</h5>
                       <h5 class="author"><b>From:</b> {{$ann->author}}</h5>
