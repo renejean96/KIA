@@ -55,12 +55,12 @@
                                 <td>{{$message->subject}}</td>
                                 <td>{{$message->created_at}}</td>                                              
                             <form action="" method="POST">                                  
-                                <td><a href="#messageModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
-                                <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
+                                <td><a href="#{{'messageModal'.$message->id}}" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                                <td><a href="#{{'deleteModal'.$message->id}}" class="btn btn-danger" data-toggle="modal">Delete</a></td>
                             </form>
                             </tr>
                             <!-- Modal --> 
-                            <div class="modal fade details" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                            <div class="modal fade details" id="{{'messageModal'.$message->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                               <div class="modal-dialog modal-lg"> 
                                   <div class="modal-content"> 
                                       <div class="modal-header"> 
@@ -84,7 +84,7 @@
                     <!-- /.modal -->
 
                     <!-- Modal --> 
-                    <div class="modal fade details" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                    <div class="modal fade details" id="{{'deleteModal'.$message->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                             <div class="modal-dialog"> 
                                 <div class="modal-content"> 
                                     <div class="modal-header"> 
@@ -98,7 +98,7 @@
                                       </p>              
                                     </div> 
                                     <div class="modal-footer"> 
-                                        <a href = "{{ route('message.destroy', $message->id) }}">
+                                        <a href = "{{ route('message.destroy', $message->id) }}"></a>
                                         <button type="button" class="btn btn-danger">Delete</button>
                                         <button type="button" class="btn btn-default" data-dismiss="modal"><b>Cancel</b></button>
                                     </div> 

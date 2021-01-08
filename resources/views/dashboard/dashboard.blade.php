@@ -64,13 +64,13 @@
                                   <td>{{$announcement->created_at}}</td>                                              
                                   <td>Principal</td>
                               <form action="" method="POST">                                  
-                              <td><a href="#announcementsModal" class="btn btn-primary" data-toggle="modal">Details</a></td>
-                                  <td><a href="" class="btn btn-warning">Edit</a></td>
-                                  <td><a href="#deleteModal" class="btn btn-danger" data-toggle="modal">Delete</a></td>
+                              <td><a href="#{{'announcementsModal'.$announcement->id}}" class="btn btn-primary" data-toggle="modal">Details</a></td>
+                                  <td><a href="#{{'editModal'.$announcement->id}}" class="btn btn-warning">Edit</a></td>
+                                  <td><a href="#{{'deleteModal'.$announcement->id}}" class="btn btn-danger" data-toggle="modal">Delete</a></td>
                               </form>
                               </tr>
                               <!-- Modal --> 
-                              <div class="modal fade details" id="announcementsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                              <div class="modal fade details" id="{{'announcementsModal'.$announcement->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                                       <div class="modal-dialog modal-lg"> 
                                           <div class="modal-content"> 
                                               <div class="modal-header"> 
@@ -94,7 +94,7 @@
                             <!-- /.modal -->
 
                             <!-- Modal --> 
-                            <div class="modal fade details" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+                            <div class="modal fade details" id={{'deleteModal'.$announcement->id}} tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
                                     <div class="modal-dialog"> 
                                         <div class="modal-content"> 
                                             <div class="modal-header"> 
@@ -108,7 +108,7 @@
                                               </p>              
                                             </div> 
                                             <div class="modal-footer"> 
-                                                <a href = "{{ route('announcement.destroy', $announcement->id) }}">
+                                                <a href = "{{ route('announcement.destroy', $announcement->id) }}"></a>
                                                 <button type="button" class="btn btn-danger">Delete</button>
                                                 <button type="button" class="btn btn-default" data-dismiss="modal"><b>Cancel</b></button>
                                             </div> 
