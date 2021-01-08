@@ -38,3 +38,6 @@
 
   <!-- Template Main JS File -->
   <script src="{{URL::to('')}}/assets/js/main.js"></script>
+
+  
+  

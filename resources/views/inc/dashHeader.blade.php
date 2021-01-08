@@ -9,7 +9,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
         <li class="active"><a href="{{'/dashboard'}}">Dashboard</a></li>
-          <li class="drop-down"><a href="">Christopher</a>
+          <li class="drop-down"><a href="#">{{ Auth::user()->name }}</a>
             <ul>
               <li>
                 <a href="{{ route('logout') }}" onclick="event.preventDefault();

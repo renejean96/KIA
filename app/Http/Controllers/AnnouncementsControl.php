@@ -11,24 +11,33 @@ use Illuminate\Http\Request;
 class AnnouncementsControl extends Controller
 {
     public function index(){
-        $data = Announcements::all();
-        return view('dashboard.dashboard')->with('datas',$data);
-    } 
+        $announcements = Announcements::orderBy('created_at','desc')->paginate(3);
+        return view('pages.announcements')->with('announcements',$announcements);
+    }
     public function create(){
         return view('dashboard.add_announcement');
     }
+
     public function store(Request $request){
+
         $request->validate([
             'title'=>'required',
             'author'=>'required',
-            'description'=>'required'
+            'body'=>'required'
         ]);
-        $announcement = new Announcements([
-            'title'=>$request->get('title'),
-            'body'=>$request->get('body'),
-            'author'=>$request->get('author')
-        ]);
+        $announcement = new Announcements;
+        $announcement->title = $request->input('title');
+        $announcement->author=$request->input('author');
+        $announcement->body=$request->input('body');
         $announcement->save();
-        return redirect('dashboard/announcement')->with('success','announcement has been added');
+        return redirect('/dashboard')->with('success','new announcement added');
     }
+
+    public function destroy($id) {
+     
+        $announcement = Announcements::where('id', '=', $id)->delete();
+        
+        return redirect('/dashboard');
+    }
+    
 }
