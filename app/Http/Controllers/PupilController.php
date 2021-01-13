@@ -97,14 +97,33 @@ class PupilController extends Controller
             'occupation' => $request['guardian-occupation']    
         ]);
 
-        $data['info'] = Pupil::where('id','=',$pupil->id)->get();
-        $data['address'] = PupilAddress::where('pupilId','=',$pupil->id)->get();
-        $data['father'] = PupilFather::where('pupilId','=',$pupil->id)->get();
-        $data['mother'] = PupilMother::where('pupilId','=',$pupil->id)->get();        
-        $data['guardian'] = PupilGuardian::where('pupilId','=',$pupil->id)->get();
+        $data['pupilId'] = $pupil->id;
+        $data['firstname'] = $pupil->firstName;
+        $data['lastname'] = $pupil->lastName;
+
+        return view('pages.registration_success', $data);
+
+        // $data['info'] = Pupil::where('id','=',$pupil->id)->get();
+        // $data['address'] = PupilAddress::where('pupilId','=',$pupil->id)->get();
+        // $data['father'] = PupilFather::where('pupilId','=',$pupil->id)->get();
+        // $data['mother'] = PupilMother::where('pupilId','=',$pupil->id)->get();        
+        // $data['guardian'] = PupilGuardian::where('pupilId','=',$pupil->id)->get();
+
+        // $pdf = PDF::loadView('pdf.registrationForm', $data);
+        // return $pdf->stream('registrationForm.pdf');        
+    }
+
+    public function printForm ($pupilId) {
+
+        $data['info'] = Pupil::where('id','=',$pupilId)->get();
+        $data['address'] = PupilAddress::where('pupilId','=',$pupilId)->get();
+        $data['father'] = PupilFather::where('pupilId','=',$pupilId)->get();
+        $data['mother'] = PupilMother::where('pupilId','=',$pupilId)->get();        
+        $data['guardian'] = PupilGuardian::where('pupilId','=',$pupilId)->get();
 
         $pdf = PDF::loadView('pdf.registrationForm', $data);
         return $pdf->stream('registrationForm.pdf');        
+    
     }
 
     /**

@@ -56,6 +56,8 @@ Route::get('/add/announcement','DashboardControl@addAnnouncement');
 Route::get('/add/member','DashboardControl@addMember');
 Route::get('/add/event','DashboardControl@addEvent');
 
+Route::get('/download/document/{id}','PupilController@printForm');
+
 Route::resource('posts','PostsController');
 Route::resource('events','CalendarController');
 Route::resource('staff','StaffController');

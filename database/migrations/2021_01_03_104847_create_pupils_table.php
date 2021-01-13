@@ -17,12 +17,12 @@ class CreatePupilsTable extends Migration
             $table->id();
             $table->string('firstName');
             $table->string('lastName');
-            $table->string('nationality');
+            $table->string('nationality')->nullable();;
             $table->string('dob');
             $table->string('sex');
-            $table->string('lunch');                        
-            $table->string('breakfast');
-            $table->string('transport');            
+            $table->string('lunch')->nullable();                        
+            $table->string('breakfast')->nullable();
+            $table->string('transport')->nullable();            
             $table->timestamps();
         });
     }

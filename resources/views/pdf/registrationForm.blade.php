@@ -45,7 +45,7 @@
         font-size: 10pt;   
     }
     .doc-body table {
-        width: 60%;
+        width: 80%;
     }
     table .mid-content td{
         padding-top: 0.1%;
@@ -88,7 +88,20 @@
                     </tr>
                     <tr class="mid-content">
                         <td>Sex:  {{ $i->sex }}</td>
-                        <td>School Facilications:</td>
+                        <td>
+                            School Facilications:
+                            @if ($i->breakfast == 'on')
+                                breakfast
+                            @endif
+                            ,
+                            @if ($i->lunch == 'on')
+                                lunch
+                            @endif
+                            ,
+                            @if ($i->transport == 'on')
+                                transport
+                            @endif                            
+                        </td>
                     </tr>
                 @endforeach
 

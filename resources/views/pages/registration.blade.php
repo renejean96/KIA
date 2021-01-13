@@ -89,11 +89,11 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-email">District</label>
-                                <input type="text" placeholder="Sector..." name="district" class="f1-email form-control" id="f1-email">
+                                <input type="text" placeholder="District..." name="district" class="f1-email form-control" id="f1-email">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="sr-only" for="f1-text">Sector</label>
-                                <input type="text" name="sector" placeholder="Cell..." class="f1-text form-control" id="f1-text">
+                                <input type="text" name="sector" placeholder="Sector..." class="f1-text form-control" id="f1-text">
                             </div>
                         </div>
                         <div class="row">
