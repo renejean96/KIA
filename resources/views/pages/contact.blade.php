@@ -36,13 +36,15 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+
+                <p>kigaliinfantsacademy@gmail.com
+                <!-- <p>info@kigaliinfantsacademy.com</p> -->
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+250 788 423 165</p>
               </div>
 
             </div>
