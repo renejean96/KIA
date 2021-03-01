@@ -347,6 +347,7 @@ section.dashboard .main-space .main-form .form-control {
 }
 .staff .member img {
     height: 245px;
+    width: 100%;
 }
 p.no-entry {
     margin-top: 10%;
@@ -358,4 +359,55 @@ p.no-data {
     margin-left: 40%;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+.mid-blocks-container {
+    width: 85%;
+}
+.mid-blocks {
+    margin-top: -10%;
+    margin-bottom: 5%;
+    /* width: 80%; */
+}
+.mid-blocks .chunk {
+    text-align: justify;
+    color: white;
+}
+.mid-blocks .chunk i
+{
+    text-align: center;
+    font-size: 20pt;
+}
+.mid-blocks .chunk h4
+{
+    text-align: center;
+}
+.mid-blocks .vision {
+    background-color: #B9354B;
+    border-top: 5px solid red;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.mid-blocks .mission {
+    background-color: #f0bc01;
+    border-top: 5px solid yellow;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.mid-blocks .values {
+    background-color: #518413;
+    border-top: 5px solid #5fcf80;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;    
+}
+.mid-blocks .sub-list{
+    
+    
+    /* margin-top: 3%;  */
+    /* margin-left: 4.5%; */
 }

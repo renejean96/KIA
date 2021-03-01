@@ -11,52 +11,52 @@
   @section('content')
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex justify-content-center align-items-center">
-          <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Success,<br>Begins here</h1>
+          <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Success begins here</h1>
             <br>
             <h2>A modern nursery & primary school for your children</h2>
-            <a href="{{'/registration'}}"class="btn-get-started">Register Now</a>
+            <!-- <a href="{{'/registration'}}"class="btn-get-started">Register Now</a> -->
+          
           </div>
+
         </section><!-- End Hero -->
     <main id="main">
   
       <main id="main">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-          <div class="container section-about" data-aos="fade-up">
-    
-            <!-- <div class="section-title">
-              <h2>About</h2>
-              <p>About Us</p>
-            </div> -->
-    
-            <h3 class="section-title">GET TO KNOW US</h3>
-    
-            <div class="row">
-              <div class="col-md-6 vision-part">
-                <i class="bx bx-world"></i>
-                <br>
-                <h4>Our Vision</h4>
-                <p class="text-center">
-                    To be the leading nursery and primary school in Rwanda and the region.
-                </p>
-              </div>
-              <div class="col-md-6 mission-part">
-                <i class="bx bx-badge-check"></i>
-                <br>
-                <h4>Our Mission</h4>
-                <p class="text-center">
-    
-                  To be a competitive primary school that provides quality education with innovative child centered care.
-                  We achieve this through technology and motivated human ressource in partnership with all stakeholders.
-    
-                </p>            
-              </div>          
-            </div>
-    
-          </div>
-        </section><!-- End About Section -->
+      <div class="container mid-blocks-container">
+      <div class="row mid-blocks">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-4 chunk vision">
+          <!-- <i class="bx bx-world"></i> -->
+          <br>
+          <h4>Our Vision</h4>
+          <br>
+          <p>To be the leading nursery and primary school in Rwanda and the region.</p> 
+        </div>
+        <div class="col-md-4 chunk mission">
+          <!-- <i class="bx bx-world"></i> -->
+          <br>
+          <h4>Our Mission</h4>
+          <br>
+          <p>To be a competitive primary school that provides quality education with innovative child centered care.
+                  We achieve this through technology and motivated human ressource in partnership with all stakeholders.</p>             
+        </div>
+        <div class="col-md-4 chunk values">
+          <!-- <i class="bx bx-world"></i> -->
+          <br>
+          <h4>Our Values</h4><br>   
+            <ul class="sub-list list-unstyled">
+              <li><span class="bx bx-chevron-right"></span> &nbsp God fearing</li>
+              <li><span class="bx bx-chevron-right"></span> &nbsp Hard work & Team work</li>
+              <li><span class="bx bx-chevron-right"></span> &nbsp Patriotism</li>
+              <li><span class="bx bx-chevron-right"></span> &nbsp Discipline & Accountability</li>
+              <li><span class="bx bx-chevron-right"></span> &nbsp Shared responsibility</li>                              
+            </ul>
+        </div>                        
+        <!-- <div class="col-md-1"></div> -->
+      </div>
+      </div>
     
         <!-- ======= Counts Section ======= -->
         <section id="stats" class="stats">
@@ -117,7 +117,7 @@
                       <div class="icon-box mt-4 mt-xl-0">
                         <i class="bx bx-home"></i>
                         <h4>Primary</h4>
-                        <p>We provide education at the primary school level. Children are facilitated with free transport from your living places.</p>
+                        <p>We provide education at the primary school level. Children are facilitated with transport from your living places.</p>
                       </div>
                     </div>
                   </div>

@@ -37,39 +37,39 @@ Route::get('/services','PagesController@services');
 Route::resource('posts','PostsController');
 
 */
-Route::get('/','\PagesController@index');
-Route::get('/about/staff','\PagesController@staff');
-Route::get('/about/school','\PagesController@aboutSchool');
-Route::get('/calendar','\PagesController@calender');
-Route::get('/contact','\PagesController@contact');
-Route::get('/registration','\PagesController@registration');
-Route::get('/announcements','\PagesController@announcements');
-Route::get('/announcement/{id}','\PagesController@announcement');
-Route::get('/dashboard','\DashboardControl@dashboard');
-Route::get('/view/announcement','\DashboardControl@dashboard');
-Route::get('/view/calendar','\CalendarController@index');
-Route::get('/view/member','\StaffController@index');
-Route::get('/view/message','\MessagesControl@index');
+Route::get('/','PagesController@index');
+Route::get('/about/staff','PagesController@staff');
+Route::get('/about/school','PagesController@aboutSchool');
+Route::get('/calendar','PagesController@calender');
+Route::get('/contact','PagesController@contact');
+Route::get('/registration','PagesController@registration');
+Route::get('/announcements','PagesController@announcements');
+Route::get('/announcement/{id}','PagesController@announcement');
+Route::get('/dashboard','DashboardControl@dashboard');
+Route::get('/view/announcement','DashboardControl@dashboard');
+Route::get('/view/calendar','CalendarController@index');
+Route::get('/view/member','StaffController@index');
+Route::get('/view/message','MessagesControl@index');
 
-Route::get('/print/test','\PDFController@printForm');
-Route::get('/add/announcement','\DashboardControl@addAnnouncement');
-Route::get('/add/member','\DashboardControl@addMember');
-Route::get('/add/event','\DashboardControl@addEvent');
+Route::get('/print/test','PDFController@printForm');
+Route::get('/add/announcement','DashboardControl@addAnnouncement');
+Route::get('/add/member','DashboardControl@addMember');
+Route::get('/add/event','DashboardControl@addEvent');
 
-Route::get('/download/document/{id}','\PupilController@printForm');
+Route::get('/download/document/{id}','PupilController@printForm');
 
-Route::resource('posts','\PostsController');
-Route::resource('events','\CalendarController');
-Route::resource('staff','\StaffController');
-Route::resource('pupil','\PupilController');
+Route::resource('posts','PostsController');
+Route::resource('events','CalendarController');
+Route::resource('staff','StaffController');
+Route::resource('pupil','PupilController');
 
-Route::get('/events/delete/{id}', '\CalendarController@destroy')
+Route::get('/events/delete/{id}', 'CalendarController@destroy')
      ->name('events.destroy');
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 /*announcement*/
-Route::get('/add/announcement','\AnnouncementsControl@create');
+Route::get('/add/announcement','AnnouncementsControl@create');
 Route::post('store','AnnouncementsControl@store');
 Route::get('/announcement/delete/{id}', 'AnnouncementsControl@destroy')
      ->name('announcement.destroy');
