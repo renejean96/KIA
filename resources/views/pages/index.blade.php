@@ -137,12 +137,12 @@
             <div class="row curricular-activities">
               <div class="curricular-activity col-md-6">
                 <img src = "{{URL::to('')}}/assets/img/football_team.png" class="">
-                <div class="img-caption">Traditional dance club</div>
+                <div class="img-caption">School football team</div>
               </div>
               <br>
               <div class="curricular-activity col-md-6">
                 <img src = "{{URL::to('')}}/assets/img/traditional_dance.png" class="">
-                <div class="img-caption">School football team</div>
+                <div class="img-caption">Traditional dance club</div>
               </div>            
             </div>
 
