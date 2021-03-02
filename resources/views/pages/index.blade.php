@@ -134,6 +134,18 @@
     
             <h3 class="section-title">SCHOOL EXTRA-CURRICULAR ACTIVITIES</h3>
     
+            <div class="row curricular-activities">
+              <div class="curricular-activity col-md-6">
+                <img src = "{{URL::to('')}}/assets/img/football_team.png" class="">
+                <div class="img-caption">Traditional dance club</div>
+              </div>
+              <br>
+              <div class="curricular-activity col-md-6">
+                <img src = "{{URL::to('')}}/assets/img/traditional_dance.png" class="">
+                <div class="img-caption">School football team</div>
+              </div>            
+            </div>
+
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
               <div class="col-lg-3 col-md-4">
                 <div class="icon-box">
